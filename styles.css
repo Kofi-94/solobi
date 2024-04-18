@@ -42,14 +42,14 @@
 
 /* Style for the message */
 .message {
-  font-size: 24px;
+  font-size: 40px;
   text-align: center; /* Center the text */
 }
 
 /* Navigation dots */
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 1px;
+  width: 1px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -63,5 +63,38 @@
 
 /* Center the dots */
 .dot-container {
-  text-align: center;
+  text-align: bottom left corner;
 }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <style>
+        /* Set the dimensions of the GIF container to match the dimensions of the viewport */
+        .gif-container {
+            width: 70vw; /* 70% of the viewport width */
+            height: 70vh; /* 70% of the viewport height */
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            overflow: hidden; /* Hide any overflow content */
+        }
+
+        .gif-container img {
+            max-width: 70%; /* Set the maximum width of the image to 100% */
+            max-height: 70%; /* Set the maximum height of the image to 100% */
+            object-fit: contain; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="gif-container">
+        <img src="birthday.gif" alt="Birthday GIF">
+    </div>
+
+    <!-- Other content goes here -->
+</body>
+</html>
