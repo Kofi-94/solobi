@@ -43,6 +43,7 @@
 /* Style for the message */
 .message {
   font-size: 30px;
+  color: white;
   text-align: center; /* Center the text */
 }
 
